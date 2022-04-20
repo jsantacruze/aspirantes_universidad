@@ -1,0 +1,11 @@
+D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Universidad\aspirantes_presentacion\bin\Debug\aspirantes_presentacion.exe.config
+D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Universidad\aspirantes_presentacion\bin\Debug\aspirantes_presentacion.exe
+D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Universidad\aspirantes_presentacion\bin\Debug\aspirantes_presentacion.pdb
+D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.csproj.AssemblyReference.cache
+D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.Properties.Resources.resources
+D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.csproj.GenerateResource.cache
+D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.csproj.CoreCompileInputs.cache
+D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.exe
+D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.pdb
+D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.Form1.resources
+D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.frmListaAspirantes.resources

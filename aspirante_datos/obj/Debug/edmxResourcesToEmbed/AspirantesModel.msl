@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AspirantesModelStoreContainer" CdmEntityContainer="AspirantesEntities">
+    <EntitySetMapping Name="Aspirante">
+      <EntityTypeMapping TypeName="AspirantesModel.Aspirante">
+        <MappingFragment StoreEntitySet="Aspirante">
+          <ScalarProperty Name="aspirante_id" ColumnName="aspirante_id" />
+          <ScalarProperty Name="aspirante_cedula" ColumnName="aspirante_cedula" />
+          <ScalarProperty Name="aspirante_nombres" ColumnName="aspirante_nombres" />
+          <ScalarProperty Name="aspirante_apellidos" ColumnName="aspirante_apellidos" />
+          <ScalarProperty Name="aspirante_direccion" ColumnName="aspirante_direccion" />
+          <ScalarProperty Name="aspirante_email" ColumnName="aspirante_email" />
+          <ScalarProperty Name="aspirante_movil" ColumnName="aspirante_movil" />
+          <ScalarProperty Name="aspirante_genero" ColumnName="aspirante_genero" />
+          <ScalarProperty Name="aspirante_carrera_interes" ColumnName="aspirante_carrera_interes" />
+          <ScalarProperty Name="aspirante_observaciones" ColumnName="aspirante_observaciones" />
+          <ScalarProperty Name="aspirante_fecha_registro" ColumnName="aspirante_fecha_registro" />
+          <ScalarProperty Name="aspirante_user_id" ColumnName="aspirante_user_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="AspirantesModel.AspNetUsers">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="NormalizedUserName" ColumnName="NormalizedUserName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NormalizedEmail" ColumnName="NormalizedEmail" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="ConcurrencyStamp" ColumnName="ConcurrencyStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEnd" ColumnName="LockoutEnd" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carrera">
+      <EntityTypeMapping TypeName="AspirantesModel.Carrera">
+        <MappingFragment StoreEntitySet="Carrera">
+          <ScalarProperty Name="carrera_id" ColumnName="carrera_id" />
+          <ScalarProperty Name="carrera_nombre" ColumnName="carrera_nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genero">
+      <EntityTypeMapping TypeName="AspirantesModel.Genero">
+        <MappingFragment StoreEntitySet="Genero">
+          <ScalarProperty Name="genero_id" ColumnName="genero_id" />
+          <ScalarProperty Name="genero_descripcion" ColumnName="genero_descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

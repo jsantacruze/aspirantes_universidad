@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AspirantesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Aspirante">
+    <Key>
+      <PropertyRef Name="aspirante_id" />
+    </Key>
+    <Property Name="aspirante_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="aspirante_cedula" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="aspirante_nombres" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="aspirante_apellidos" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="aspirante_direccion" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="aspirante_email" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="aspirante_movil" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="aspirante_genero" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="aspirante_carrera_interes" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="aspirante_observaciones" Type="varchar" MaxLength="150" />
+    <Property Name="aspirante_fecha_registro" Type="datetime" Nullable="false" />
+    <Property Name="aspirante_user_id" Type="nvarchar" MaxLength="450" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="450" Nullable="false" />
+    <Property Name="NombreCompleto" Type="nvarchar(max)" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" />
+    <Property Name="NormalizedUserName" Type="nvarchar" MaxLength="256" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="NormalizedEmail" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="ConcurrencyStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEnd" Type="datetimeoffset" Precision="7" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Carrera">
+    <Key>
+      <PropertyRef Name="carrera_id" />
+    </Key>
+    <Property Name="carrera_id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="carrera_nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Genero">
+    <Key>
+      <PropertyRef Name="genero_id" />
+    </Key>
+    <Property Name="genero_id" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="genero_descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Aspirante_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+    <End Role="Aspirante" Type="Self.Aspirante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Aspirante">
+        <PropertyRef Name="aspirante_user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Aspirante_Carrera">
+    <End Role="Carrera" Type="Self.Carrera" Multiplicity="1" />
+    <End Role="Aspirante" Type="Self.Aspirante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carrera">
+        <PropertyRef Name="carrera_id" />
+      </Principal>
+      <Dependent Role="Aspirante">
+        <PropertyRef Name="aspirante_carrera_interes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Aspirante_Genero">
+    <End Role="Genero" Type="Self.Genero" Multiplicity="1" />
+    <End Role="Aspirante" Type="Self.Aspirante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genero">
+        <PropertyRef Name="genero_id" />
+      </Principal>
+      <Dependent Role="Aspirante">
+        <PropertyRef Name="aspirante_genero" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AspirantesModelStoreContainer">
+    <EntitySet Name="Aspirante" EntityType="Self.Aspirante" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Carrera" EntityType="Self.Carrera" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Genero" EntityType="Self.Genero" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Aspirante_AspNetUsers" Association="Self.FK_Aspirante_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="Aspirante" EntitySet="Aspirante" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Aspirante_Carrera" Association="Self.FK_Aspirante_Carrera">
+      <End Role="Carrera" EntitySet="Carrera" />
+      <End Role="Aspirante" EntitySet="Aspirante" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Aspirante_Genero" Association="Self.FK_Aspirante_Genero">
+      <End Role="Genero" EntitySet="Genero" />
+      <End Role="Aspirante" EntitySet="Aspirante" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
