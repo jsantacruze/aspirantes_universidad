@@ -10,3 +10,15 @@ D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Univers
 D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Universidad\aspirante_datos\obj\Debug\aspirante_datos.csproj.CopyComplete
 D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Universidad\aspirante_datos\obj\Debug\aspirante_datos.dll
 D:\UNIVERSIDAD\PROGRAMACION CON BASES DE DATOS\ASPIRANTES\sln_Aspirantes_Universidad\aspirante_datos\obj\Debug\aspirante_datos.pdb
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirante_datos\bin\Debug\aspirante_datos.dll.config
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirante_datos\bin\Debug\aspirante_datos.dll
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirante_datos\bin\Debug\aspirante_datos.pdb
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirante_datos\bin\Debug\EntityFramework.dll
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirante_datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirante_datos\bin\Debug\EntityFramework.xml
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirante_datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirante_datos\obj\Debug\aspirante_datos.csproj.AssemblyReference.cache
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirante_datos\obj\Debug\aspirante_datos.csproj.CoreCompileInputs.cache
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirante_datos\obj\Debug\aspirante_datos.csproj.CopyComplete
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirante_datos\obj\Debug\aspirante_datos.dll
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirante_datos\obj\Debug\aspirante_datos.pdb

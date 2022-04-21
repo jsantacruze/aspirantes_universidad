@@ -10,7 +10,22 @@ namespace aspirante_datos
     {
         //METODO PARA DEVOLVER LA LISTA DE ASPIRANTES POR FILTRO
         public static List<Aspirante> getListaByFiltro(string filtro)
-        { 
+        {
+            try
+            {
+                using (AspirantesEntities db = new AspirantesEntities())
+                {
+                    var result = db.Aspirante
+                        .Where(a => a.aspirante_nombres.Contains(filtro)
+                                 || a.aspirante_apellidos.Contains(filtro)).ToList();
+                        return result;
+
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

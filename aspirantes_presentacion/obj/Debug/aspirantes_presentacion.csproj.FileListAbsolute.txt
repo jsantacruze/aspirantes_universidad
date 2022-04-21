@@ -20,3 +20,14 @@ C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\D
 C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.csproj.CoreCompileInputs.cache
 C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.exe
 C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.pdb
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\bin\Debug\aspirantes_negocio.dll
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\bin\Debug\aspirante_datos.dll
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\bin\Debug\EntityFramework.dll
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\bin\Debug\aspirantes_negocio.pdb
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\bin\Debug\aspirante_datos.pdb
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\bin\Debug\aspirante_datos.dll.config
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\bin\Debug\EntityFramework.xml
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.csproj.CopyComplete
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\bin\Debug\EntityFramework.SqlServer.xml

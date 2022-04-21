@@ -16,5 +16,11 @@ namespace aspirantes_presentacion
         {
             InitializeComponent();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            this.aspiranteBindingSource.DataSource =
+                aspirantes_negocio.Aspirante_BO.getListaByFiltro(this.txtFiltro.Text);
+        }
     }
 }

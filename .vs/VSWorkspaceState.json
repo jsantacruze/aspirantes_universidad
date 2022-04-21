@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\aspirantes_presentacion"
+    "\\aspirantes_presentacion",
+    "\\aspirante_datos",
+    "\\aspirante_datos\\Properties"
   ],
-  "SelectedNode": "\\sln_Aspirantes_Universidad.sln",
+  "SelectedNode": "\\aspirantes_presentacion\\frmListaAspirantes.cs",
   "PreviewInSolutionExplorer": false
 }
