@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Aspirante_BO.cs" />
     <Compile Include="Carrera_BO.cs" />
+    <Compile Include="Genero_BO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

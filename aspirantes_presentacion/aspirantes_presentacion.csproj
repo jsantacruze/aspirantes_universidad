@@ -66,6 +66,12 @@
     <Compile Include="frmCarreras.Designer.cs">
       <DependentUpon>frmCarreras.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenero.Designer.cs">
+      <DependentUpon>frmGenero.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListaAspirantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCarreras.resx">
       <DependentUpon>frmCarreras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenero.resx">
+      <DependentUpon>frmGenero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListaAspirantes.resx">
       <DependentUpon>frmListaAspirantes.cs</DependentUpon>
@@ -94,6 +103,7 @@
     </Compile>
     <None Include="Properties\DataSources\aspirante_datos.Aspirante.datasource" />
     <None Include="Properties\DataSources\aspirante_datos.Carrera.datasource" />
+    <None Include="Properties\DataSources\aspirante_datos.Genero.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

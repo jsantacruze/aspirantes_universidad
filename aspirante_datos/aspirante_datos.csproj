@@ -79,6 +79,7 @@
     <Compile Include="Genero.cs">
       <DependentUpon>AspirantesModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Genero_DAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
