@@ -25,5 +25,22 @@ namespace aspirante_datos
                 throw ex;
             }
         }
+
+        public static Carrera getByID(string id)
+        {
+            try
+            {
+                using (AspirantesEntities db = new AspirantesEntities())
+                {
+                    var result = db.Carrera.Find(id);
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }
