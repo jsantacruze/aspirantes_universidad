@@ -27,5 +27,22 @@ namespace aspirante_datos
                 throw ex;
             }
         }
+
+        public static Aspirante getByID(long id)
+        {
+            try
+            {
+                using (AspirantesEntities db = new AspirantesEntities())
+                {
+                    var result = db.Aspirante.Find(id);
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

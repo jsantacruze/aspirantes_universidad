@@ -75,6 +75,7 @@
     <Compile Include="Carrera.cs">
       <DependentUpon>AspirantesModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Carrera_DAO.cs" />
     <Compile Include="Genero.cs">
       <DependentUpon>AspirantesModel.tt</DependentUpon>
     </Compile>

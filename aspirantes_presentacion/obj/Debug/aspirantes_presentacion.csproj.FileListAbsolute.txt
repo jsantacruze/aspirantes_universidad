@@ -30,3 +30,5 @@ C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\bin\D
 C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.csproj.CopyComplete
 C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.frmCarreras.resources
