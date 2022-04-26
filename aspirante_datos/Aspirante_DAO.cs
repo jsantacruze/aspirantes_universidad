@@ -28,6 +28,28 @@ namespace aspirante_datos
             }
         }
 
+        public static List<Aspirante> getListaByFiltroAndCarrera(string filtro, string carerra_id)
+        {
+            try
+            {
+                using (AspirantesEntities db = new AspirantesEntities())
+                {
+                    var result = db.Aspirante
+                        .Where(a => (a.aspirante_nombres.Contains(filtro)
+                                 || a.aspirante_apellidos.Contains(filtro))
+                                 && a.aspirante_carrera_interes == carerra_id
+                                 )
+                        .ToList();
+                    return result;
+
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public static Aspirante getByID(long id)
         {
             try

@@ -36,19 +36,19 @@ namespace aspirantes_presentacion
             this.txtFiltro = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.aspiranteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aspiranteBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.aspiranteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.aspiranteBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.aspiranteDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,22 +63,28 @@ namespace aspirantes_presentacion
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.carreraBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.carreraComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aspiranteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aspiranteBindingNavigator)).BeginInit();
             this.aspiranteBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aspiranteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aspiranteDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carreraBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.carreraComboBox);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Controls.Add(this.txtFiltro);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(7, 8);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(781, 61);
+            this.groupBox1.Size = new System.Drawing.Size(795, 67);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Búsqueda";
@@ -87,7 +93,7 @@ namespace aspirantes_presentacion
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.Red;
-            this.btnBuscar.Location = new System.Drawing.Point(680, 25);
+            this.btnBuscar.Location = new System.Drawing.Point(700, 24);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 2;
@@ -97,15 +103,15 @@ namespace aspirantes_presentacion
             // 
             // txtFiltro
             // 
-            this.txtFiltro.Location = new System.Drawing.Point(53, 25);
+            this.txtFiltro.Location = new System.Drawing.Point(386, 25);
             this.txtFiltro.Name = "txtFiltro";
-            this.txtFiltro.Size = new System.Drawing.Size(621, 20);
+            this.txtFiltro.Size = new System.Drawing.Size(310, 20);
             this.txtFiltro.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 28);
+            this.label1.Location = new System.Drawing.Point(349, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 0;
@@ -121,10 +127,6 @@ namespace aspirantes_presentacion
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resultados";
-            // 
-            // aspiranteBindingSource
-            // 
-            this.aspiranteBindingSource.DataSource = typeof(aspirante_datos.Aspirante);
             // 
             // aspiranteBindingNavigator
             // 
@@ -157,6 +159,35 @@ namespace aspirantes_presentacion
             this.aspiranteBindingNavigator.TabIndex = 2;
             this.aspiranteBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // aspiranteBindingSource
+            // 
+            this.aspiranteBindingSource.DataSource = typeof(aspirante_datos.Aspirante);
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -184,21 +215,15 @@ namespace aspirantes_presentacion
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posición";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -221,26 +246,8 @@ namespace aspirantes_presentacion
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // aspiranteBindingNavigatorSaveItem
             // 
@@ -346,25 +353,52 @@ namespace aspirantes_presentacion
             this.dataGridViewTextBoxColumn12.HeaderText = "aspirante_user_id";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Carrera:";
+            // 
+            // carreraBindingSource
+            // 
+            this.carreraBindingSource.DataSource = typeof(aspirante_datos.Carrera);
+            // 
+            // carreraComboBox
+            // 
+            this.carreraComboBox.DataSource = this.carreraBindingSource;
+            this.carreraComboBox.DisplayMember = "carrera_nombre";
+            this.carreraComboBox.FormattingEnabled = true;
+            this.carreraComboBox.Location = new System.Drawing.Point(65, 26);
+            this.carreraComboBox.Name = "carreraComboBox";
+            this.carreraComboBox.Size = new System.Drawing.Size(266, 21);
+            this.carreraComboBox.TabIndex = 4;
+            this.carreraComboBox.ValueMember = "carrera_id";
+            this.carreraComboBox.SelectedIndexChanged += new System.EventHandler(this.carreraComboBox_SelectedIndexChanged);
+            // 
             // frmListaAspirantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(802, 450);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmListaAspirantes";
             this.Text = "Lista Aspirantes";
+            this.Load += new System.EventHandler(this.frmListaAspirantes_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aspiranteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aspiranteBindingNavigator)).EndInit();
             this.aspiranteBindingNavigator.ResumeLayout(false);
             this.aspiranteBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aspiranteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aspiranteDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carreraBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -403,5 +437,8 @@ namespace aspirantes_presentacion
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton aspiranteBindingNavigatorSaveItem;
+        private System.Windows.Forms.ComboBox carreraComboBox;
+        private System.Windows.Forms.BindingSource carreraBindingSource;
+        private System.Windows.Forms.Label label2;
     }
 }

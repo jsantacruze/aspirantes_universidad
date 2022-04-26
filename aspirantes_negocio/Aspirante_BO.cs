@@ -21,5 +21,18 @@ namespace aspirantes_negocio
                 throw ex;
             }
         }
+
+        public static List<Aspirante> getListaByFiltroAndCarrera(string filtro, string carrera_id)
+        {
+            try
+            {
+                return Aspirante_DAO.getListaByFiltroAndCarrera(filtro, carrera_id);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }
