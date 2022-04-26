@@ -32,6 +32,9 @@ namespace aspirantes_presentacion
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListaAspirantes));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.carreraComboBox = new System.Windows.Forms.ComboBox();
+            this.carreraBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtFiltro = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -63,16 +66,13 @@ namespace aspirantes_presentacion
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.carreraBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.carreraComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.carreraBindingSource)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aspiranteBindingNavigator)).BeginInit();
             this.aspiranteBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aspiranteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aspiranteDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carreraBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -88,6 +88,32 @@ namespace aspirantes_presentacion
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Búsqueda";
+            // 
+            // carreraComboBox
+            // 
+            this.carreraComboBox.DataSource = this.carreraBindingSource;
+            this.carreraComboBox.DisplayMember = "carrera_nombre";
+            this.carreraComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.carreraComboBox.FormattingEnabled = true;
+            this.carreraComboBox.Location = new System.Drawing.Point(65, 26);
+            this.carreraComboBox.Name = "carreraComboBox";
+            this.carreraComboBox.Size = new System.Drawing.Size(266, 21);
+            this.carreraComboBox.TabIndex = 4;
+            this.carreraComboBox.ValueMember = "carrera_id";
+            this.carreraComboBox.SelectedIndexChanged += new System.EventHandler(this.carreraComboBox_SelectedIndexChanged);
+            // 
+            // carreraBindingSource
+            // 
+            this.carreraBindingSource.DataSource = typeof(aspirante_datos.Carrera);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Carrera:";
             // 
             // btnBuscar
             // 
@@ -353,31 +379,6 @@ namespace aspirantes_presentacion
             this.dataGridViewTextBoxColumn12.HeaderText = "aspirante_user_id";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Carrera:";
-            // 
-            // carreraBindingSource
-            // 
-            this.carreraBindingSource.DataSource = typeof(aspirante_datos.Carrera);
-            // 
-            // carreraComboBox
-            // 
-            this.carreraComboBox.DataSource = this.carreraBindingSource;
-            this.carreraComboBox.DisplayMember = "carrera_nombre";
-            this.carreraComboBox.FormattingEnabled = true;
-            this.carreraComboBox.Location = new System.Drawing.Point(65, 26);
-            this.carreraComboBox.Name = "carreraComboBox";
-            this.carreraComboBox.Size = new System.Drawing.Size(266, 21);
-            this.carreraComboBox.TabIndex = 4;
-            this.carreraComboBox.ValueMember = "carrera_id";
-            this.carreraComboBox.SelectedIndexChanged += new System.EventHandler(this.carreraComboBox_SelectedIndexChanged);
-            // 
             // frmListaAspirantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -391,6 +392,7 @@ namespace aspirantes_presentacion
             this.Load += new System.EventHandler(this.frmListaAspirantes_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.carreraBindingSource)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aspiranteBindingNavigator)).EndInit();
@@ -398,7 +400,6 @@ namespace aspirantes_presentacion
             this.aspiranteBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aspiranteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aspiranteDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carreraBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
