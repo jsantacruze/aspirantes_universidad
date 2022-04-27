@@ -34,5 +34,23 @@ namespace aspirantes_negocio
                 throw ex;
             }
         }
+
+        public static Aspirante getById(long id)
+        {
+            try
+            {
+                return Aspirante_DAO.getByID(id);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public static int AddOrUpdate(Aspirante aspirante)
+        {
+            return Aspirante_DAO.AddOrUpdate(aspirante);
+        }
     }
 }

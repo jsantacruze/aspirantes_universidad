@@ -31,14 +31,17 @@ namespace aspirantes_presentacion
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListaAspirantes));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.grpFiltro = new System.Windows.Forms.GroupBox();
             this.carreraComboBox = new System.Windows.Forms.ComboBox();
             this.carreraBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtFiltro = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.grpDetalle = new System.Windows.Forms.GroupBox();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.aspiranteBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.aspiranteBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -63,31 +66,32 @@ namespace aspirantes_presentacion
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox1.SuspendLayout();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grpFiltro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.carreraBindingSource)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.grpDetalle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aspiranteBindingNavigator)).BeginInit();
             this.aspiranteBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aspiranteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aspiranteDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // grpFiltro
             // 
-            this.groupBox1.Controls.Add(this.carreraComboBox);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.btnBuscar);
-            this.groupBox1.Controls.Add(this.txtFiltro);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(7, 8);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(795, 67);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Búsqueda";
+            this.grpFiltro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpFiltro.Controls.Add(this.carreraComboBox);
+            this.grpFiltro.Controls.Add(this.label2);
+            this.grpFiltro.Controls.Add(this.btnBuscar);
+            this.grpFiltro.Controls.Add(this.txtFiltro);
+            this.grpFiltro.Controls.Add(this.label1);
+            this.grpFiltro.Location = new System.Drawing.Point(7, 8);
+            this.grpFiltro.Name = "grpFiltro";
+            this.grpFiltro.Size = new System.Drawing.Size(787, 67);
+            this.grpFiltro.TabIndex = 0;
+            this.grpFiltro.TabStop = false;
+            this.grpFiltro.Text = "Búsqueda";
             // 
             // carreraComboBox
             // 
@@ -143,20 +147,50 @@ namespace aspirantes_presentacion
             this.label1.TabIndex = 0;
             this.label1.Text = "Filtro";
             // 
-            // groupBox2
+            // grpDetalle
             // 
-            this.groupBox2.Controls.Add(this.aspiranteBindingNavigator);
-            this.groupBox2.Controls.Add(this.aspiranteDataGridView);
-            this.groupBox2.Location = new System.Drawing.Point(7, 74);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(781, 372);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Resultados";
+            this.grpDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpDetalle.Controls.Add(this.btnEditar);
+            this.grpDetalle.Controls.Add(this.btnNuevo);
+            this.grpDetalle.Controls.Add(this.aspiranteBindingNavigator);
+            this.grpDetalle.Controls.Add(this.aspiranteDataGridView);
+            this.grpDetalle.Location = new System.Drawing.Point(7, 74);
+            this.grpDetalle.Name = "grpDetalle";
+            this.grpDetalle.Size = new System.Drawing.Size(787, 372);
+            this.grpDetalle.TabIndex = 1;
+            this.grpDetalle.TabStop = false;
+            this.grpDetalle.Text = "Resultados";
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(147, 15);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(137, 23);
+            this.btnEditar.TabIndex = 4;
+            this.btnEditar.Text = "Editar Aspirante";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
+            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevo.Location = new System.Drawing.Point(6, 15);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(137, 23);
+            this.btnNuevo.TabIndex = 3;
+            this.btnNuevo.Text = "Nuevo Aspirante";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // aspiranteBindingNavigator
             // 
             this.aspiranteBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.aspiranteBindingNavigator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.aspiranteBindingNavigator.BindingSource = this.aspiranteBindingSource;
             this.aspiranteBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.aspiranteBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
@@ -174,7 +208,7 @@ namespace aspirantes_presentacion
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.aspiranteBindingNavigatorSaveItem});
-            this.aspiranteBindingNavigator.Location = new System.Drawing.Point(464, 16);
+            this.aspiranteBindingNavigator.Location = new System.Drawing.Point(476, 13);
             this.aspiranteBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.aspiranteBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.aspiranteBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
@@ -286,7 +320,13 @@ namespace aspirantes_presentacion
             // 
             // aspiranteDataGridView
             // 
+            this.aspiranteDataGridView.AllowUserToAddRows = false;
+            this.aspiranteDataGridView.AllowUserToDeleteRows = false;
+            this.aspiranteDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.aspiranteDataGridView.AutoGenerateColumns = false;
+            this.aspiranteDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.aspiranteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.aspiranteDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -298,103 +338,116 @@ namespace aspirantes_presentacion
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12});
+            this.dataGridViewTextBoxColumn10});
             this.aspiranteDataGridView.DataSource = this.aspiranteBindingSource;
+            this.aspiranteDataGridView.GridColor = System.Drawing.Color.WhiteSmoke;
             this.aspiranteDataGridView.Location = new System.Drawing.Point(5, 44);
             this.aspiranteDataGridView.Name = "aspiranteDataGridView";
+            this.aspiranteDataGridView.ReadOnly = true;
             this.aspiranteDataGridView.Size = new System.Drawing.Size(770, 322);
             this.aspiranteDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "aspirante_id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "aspirante_id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 60;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "aspirante_cedula";
-            this.dataGridViewTextBoxColumn2.HeaderText = "aspirante_cedula";
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Azure;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewTextBoxColumn2.HeaderText = "cédula";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 80;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "aspirante_nombres";
-            this.dataGridViewTextBoxColumn3.HeaderText = "aspirante_nombres";
+            this.dataGridViewTextBoxColumn3.HeaderText = "nombres";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 150;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "aspirante_apellidos";
-            this.dataGridViewTextBoxColumn4.HeaderText = "aspirante_apellidos";
+            this.dataGridViewTextBoxColumn4.HeaderText = "apellidos";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 150;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "aspirante_direccion";
             this.dataGridViewTextBoxColumn5.HeaderText = "aspirante_direccion";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "aspirante_email";
             this.dataGridViewTextBoxColumn6.HeaderText = "aspirante_email";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "aspirante_movil";
             this.dataGridViewTextBoxColumn7.HeaderText = "aspirante_movil";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "aspirante_genero";
             this.dataGridViewTextBoxColumn8.HeaderText = "aspirante_genero";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.DataPropertyName = "aspirante_carrera_interes";
             this.dataGridViewTextBoxColumn9.HeaderText = "aspirante_carrera_interes";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "aspirante_observaciones";
-            this.dataGridViewTextBoxColumn10.HeaderText = "aspirante_observaciones";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.DataPropertyName = "aspirante_fecha_registro";
             this.dataGridViewTextBoxColumn11.HeaderText = "aspirante_fecha_registro";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn12
+            // dataGridViewTextBoxColumn10
             // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "aspirante_user_id";
-            this.dataGridViewTextBoxColumn12.HeaderText = "aspirante_user_id";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "aspirante_observaciones";
+            this.dataGridViewTextBoxColumn10.HeaderText = "aspirante_observaciones";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
             // 
             // frmListaAspirantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 450);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpDetalle);
+            this.Controls.Add(this.grpFiltro);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmListaAspirantes";
             this.Text = "Lista Aspirantes";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmListaAspirantes_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpFiltro.ResumeLayout(false);
+            this.grpFiltro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.carreraBindingSource)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.grpDetalle.ResumeLayout(false);
+            this.grpDetalle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aspiranteBindingNavigator)).EndInit();
             this.aspiranteBindingNavigator.ResumeLayout(false);
             this.aspiranteBindingNavigator.PerformLayout();
@@ -406,24 +459,12 @@ namespace aspirantes_presentacion
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpFiltro;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtFiltro;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox grpDetalle;
         private System.Windows.Forms.DataGridView aspiranteDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.BindingSource aspiranteBindingSource;
         private System.Windows.Forms.BindingNavigator aspiranteBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
@@ -441,5 +482,18 @@ namespace aspirantes_presentacion
         private System.Windows.Forms.ComboBox carreraComboBox;
         private System.Windows.Forms.BindingSource carreraBindingSource;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnNuevo;
     }
 }

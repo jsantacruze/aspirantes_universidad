@@ -33,3 +33,4 @@ C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\bin\D
 C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.csproj.SuggestedBindingRedirects.cache
 C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.frmCarreras.resources
 C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.frmGenero.resources
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.frmAspiranteDetail.resources

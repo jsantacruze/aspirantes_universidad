@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -56,7 +58,13 @@ namespace aspirante_datos
             {
                 using (AspirantesEntities db = new AspirantesEntities())
                 {
-                    var result = db.Aspirante.Find(id);
+                    var result = db.Aspirante
+                        .Include(a => a.Genero)
+                        .Include(a => a.Carrera)
+                        .Include(a => a.AspNetUsers)
+                        .Where(a => a.aspirante_id == id)
+                        .FirstOrDefault();
+                        
                     return result;
                 }
             }
@@ -64,6 +72,17 @@ namespace aspirante_datos
             {
 
                 throw ex;
+            }
+        }
+
+        public static int AddOrUpdate(Aspirante aspirante)
+        {
+            int result = 0;
+            using (AspirantesEntities db = new AspirantesEntities())
+            {
+                db.Aspirante.AddOrUpdate(aspirante);
+                result = db.SaveChanges();
+                return result;
             }
         }
     }
