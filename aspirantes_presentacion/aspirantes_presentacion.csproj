@@ -66,6 +66,12 @@
     <Compile Include="frmAspiranteDetail.Designer.cs">
       <DependentUpon>frmAspiranteDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCarreras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     <Compile Include="frmListaAspirantes.Designer.cs">
       <DependentUpon>frmListaAspirantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -91,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAspiranteDetail.resx">
       <DependentUpon>frmAspiranteDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCarreras.resx">
       <DependentUpon>frmCarreras.cs</DependentUpon>
@@ -100,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmListaAspirantes.resx">
       <DependentUpon>frmListaAspirantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

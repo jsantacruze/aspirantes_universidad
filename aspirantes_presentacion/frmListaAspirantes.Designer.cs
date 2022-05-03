@@ -40,8 +40,6 @@ namespace aspirantes_presentacion
             this.txtFiltro = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.grpDetalle = new System.Windows.Forms.GroupBox();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.aspiranteBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.aspiranteBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -88,7 +86,7 @@ namespace aspirantes_presentacion
             this.grpFiltro.Controls.Add(this.label1);
             this.grpFiltro.Location = new System.Drawing.Point(7, 8);
             this.grpFiltro.Name = "grpFiltro";
-            this.grpFiltro.Size = new System.Drawing.Size(787, 67);
+            this.grpFiltro.Size = new System.Drawing.Size(1131, 67);
             this.grpFiltro.TabIndex = 0;
             this.grpFiltro.TabStop = false;
             this.grpFiltro.Text = "Búsqueda";
@@ -152,40 +150,14 @@ namespace aspirantes_presentacion
             this.grpDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpDetalle.Controls.Add(this.btnEditar);
-            this.grpDetalle.Controls.Add(this.btnNuevo);
             this.grpDetalle.Controls.Add(this.aspiranteBindingNavigator);
             this.grpDetalle.Controls.Add(this.aspiranteDataGridView);
             this.grpDetalle.Location = new System.Drawing.Point(7, 74);
             this.grpDetalle.Name = "grpDetalle";
-            this.grpDetalle.Size = new System.Drawing.Size(787, 372);
+            this.grpDetalle.Size = new System.Drawing.Size(1131, 605);
             this.grpDetalle.TabIndex = 1;
             this.grpDetalle.TabStop = false;
             this.grpDetalle.Text = "Resultados";
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
-            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(147, 15);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(137, 23);
-            this.btnEditar.TabIndex = 4;
-            this.btnEditar.Text = "Editar Aspirante";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
-            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Location = new System.Drawing.Point(6, 15);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(137, 23);
-            this.btnNuevo.TabIndex = 3;
-            this.btnNuevo.Text = "Nuevo Aspirante";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // aspiranteBindingNavigator
             // 
@@ -208,14 +180,14 @@ namespace aspirantes_presentacion
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.aspiranteBindingNavigatorSaveItem});
-            this.aspiranteBindingNavigator.Location = new System.Drawing.Point(476, 13);
+            this.aspiranteBindingNavigator.Location = new System.Drawing.Point(789, 13);
             this.aspiranteBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.aspiranteBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.aspiranteBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.aspiranteBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.aspiranteBindingNavigator.Name = "aspiranteBindingNavigator";
             this.aspiranteBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.aspiranteBindingNavigator.Size = new System.Drawing.Size(280, 25);
+            this.aspiranteBindingNavigator.Size = new System.Drawing.Size(311, 25);
             this.aspiranteBindingNavigator.TabIndex = 2;
             this.aspiranteBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -275,7 +247,6 @@ namespace aspirantes_presentacion
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posición";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -345,7 +316,7 @@ namespace aspirantes_presentacion
             this.aspiranteDataGridView.Location = new System.Drawing.Point(5, 44);
             this.aspiranteDataGridView.Name = "aspiranteDataGridView";
             this.aspiranteDataGridView.ReadOnly = true;
-            this.aspiranteDataGridView.Size = new System.Drawing.Size(770, 322);
+            this.aspiranteDataGridView.Size = new System.Drawing.Size(1114, 555);
             this.aspiranteDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -435,7 +406,7 @@ namespace aspirantes_presentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 450);
+            this.ClientSize = new System.Drawing.Size(1146, 683);
             this.Controls.Add(this.grpDetalle);
             this.Controls.Add(this.grpFiltro);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -493,7 +464,5 @@ namespace aspirantes_presentacion
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnNuevo;
     }
 }

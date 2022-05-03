@@ -32,26 +32,26 @@ namespace aspirantes_presentacion
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCarreras));
             this.carreraBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.carreraBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.carreraBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.carreraDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.carreraBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.carreraBindingNavigator)).BeginInit();
             this.carreraBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.carreraDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carreraBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carreraDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // carreraBindingNavigator
@@ -80,9 +80,38 @@ namespace aspirantes_presentacion
             this.carreraBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.carreraBindingNavigator.Name = "carreraBindingNavigator";
             this.carreraBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.carreraBindingNavigator.Size = new System.Drawing.Size(800, 25);
+            this.carreraBindingNavigator.Size = new System.Drawing.Size(1230, 25);
             this.carreraBindingNavigator.TabIndex = 0;
             this.carreraBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // carreraBindingSource
+            // 
+            this.carreraBindingSource.DataSource = typeof(aspirante_datos.Carrera);
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -117,16 +146,9 @@ namespace aspirantes_presentacion
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -149,26 +171,8 @@ namespace aspirantes_presentacion
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
             // carreraBindingNavigatorSaveItem
             // 
@@ -181,7 +185,11 @@ namespace aspirantes_presentacion
             // 
             // carreraDataGridView
             // 
+            this.carreraDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.carreraDataGridView.AutoGenerateColumns = false;
+            this.carreraDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.carreraDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.carreraDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -189,7 +197,7 @@ namespace aspirantes_presentacion
             this.carreraDataGridView.DataSource = this.carreraBindingSource;
             this.carreraDataGridView.Location = new System.Drawing.Point(12, 41);
             this.carreraDataGridView.Name = "carreraDataGridView";
-            this.carreraDataGridView.Size = new System.Drawing.Size(763, 282);
+            this.carreraDataGridView.Size = new System.Drawing.Size(1210, 672);
             this.carreraDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -204,25 +212,22 @@ namespace aspirantes_presentacion
             this.dataGridViewTextBoxColumn2.HeaderText = "carrera_nombre";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // carreraBindingSource
-            // 
-            this.carreraBindingSource.DataSource = typeof(aspirante_datos.Carrera);
-            // 
             // frmCarreras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1230, 719);
             this.Controls.Add(this.carreraDataGridView);
             this.Controls.Add(this.carreraBindingNavigator);
             this.Name = "frmCarreras";
             this.Text = "frmCarreras";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmCarreras_Load);
             ((System.ComponentModel.ISupportInitialize)(this.carreraBindingNavigator)).EndInit();
             this.carreraBindingNavigator.ResumeLayout(false);
             this.carreraBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.carreraDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.carreraBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carreraDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

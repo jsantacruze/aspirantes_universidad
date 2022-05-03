@@ -12,7 +12,7 @@ using aspirante_datos;
 
 namespace aspirantes_presentacion
 {
-    public partial class frmListaAspirantes : Form
+    public partial class frmListaAspirantes : frmBase
     {
         public frmListaAspirantes()
         {
@@ -55,7 +55,8 @@ namespace aspirantes_presentacion
             //MessageBox.Show("Carrera Actual:" + GetCarreraActual().carrera_nombre);
         }
 
-        private void Nuevo()
+
+        public override void Nuevo()
         {
             frmAspiranteDetail detalle = new frmAspiranteDetail();
             if (detalle.ShowDialog() == DialogResult.OK)
@@ -69,7 +70,7 @@ namespace aspirantes_presentacion
             Nuevo();
         }
 
-        private void Editar()
+        public override void Editar()
         {
             Aspirante actual = (Aspirante)aspiranteBindingSource.Current;
             if (actual != null)

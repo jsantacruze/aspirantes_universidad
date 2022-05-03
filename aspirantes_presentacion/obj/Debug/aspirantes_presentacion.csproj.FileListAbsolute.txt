@@ -34,3 +34,5 @@ C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\D
 C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.frmCarreras.resources
 C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.frmGenero.resources
 C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.frmAspiranteDetail.resources
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.frmPrincipal.resources
+C:\Users\jsant\Source\Repos\aspirantes_universidad\aspirantes_presentacion\obj\Debug\aspirantes_presentacion.frmBase.resources

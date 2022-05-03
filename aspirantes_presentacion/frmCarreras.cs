@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace aspirantes_presentacion
 {
-    public partial class frmCarreras : Form
+    public partial class frmCarreras : frmBase
     {
         public frmCarreras()
         {
@@ -21,6 +21,11 @@ namespace aspirantes_presentacion
         {
             carreraBindingSource.DataSource =
                 aspirantes_negocio.Carrera_BO.getListByFiltro("");
+        }
+
+        public override void Nuevo()
+        {
+            MessageBox.Show("Ud está intentando crear una nueva carrera");
         }
     }
 }
